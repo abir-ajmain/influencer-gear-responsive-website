@@ -213,3 +213,40 @@ nav .nav-menu ul li{
     height: 32px;
     color: #FFFFFF;
 }
+
+/*for small devices*/
+
+@media screen and (max-width: 576px){
+    nav, .nav-menu ul{
+        flex-direction: column;
+    }
+    nav{
+        gap: 50px;
+    }
+    header{
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: center 440px;
+    background-size: 100%;
+    
+    margin: 0 auto;
+}
+    .hero-banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    #sponsor-brand{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .collection-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #featured{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
